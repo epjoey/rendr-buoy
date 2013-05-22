@@ -1,0 +1,15 @@
+
+<div>
+{{#each models}}
+  <h2>{{name}}</h2>
+  <table>
+  <tr>
+    <td>time</td><td>swell height</td><td>swell period</td><td>swell dir</td>
+  </tr>
+  {{#each buoyReports}}    
+  <tr>
+    <td>{{formatTimestamp gmttime}}</td><td>{{swellheight}}</td><td>{{swellperiod}}</td><td>{{swelldir}}</td>
+  </tr>
+  {{/each}}
+{{/each}}
+</div>

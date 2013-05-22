@@ -1,7 +1,8 @@
 var Base = require('./base');
 
 module.exports = Base.extend({
-  url: '/repos/:owner/:name',
+    
+  url: '/conditions/q/CA/San_Francisco.json',
   idAttribute: 'name'
 });
 module.exports.id = 'Repo';

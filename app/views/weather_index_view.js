@@ -1,5 +1,6 @@
 var BaseView = require('./base_view');
+
 module.exports = BaseView.extend({
-  className: 'repos_index_view'
+  className: 'weather_index_view'
 });
-module.exports.id = 'ReposIndexView';
+module.exports.id = 'WeatherIndexView';

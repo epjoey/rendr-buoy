@@ -1,10 +1,11 @@
 module.exports = {
   index: function(params, callback) {
     var spec = {
-      collection: {collection: 'Repos', params: params}
+      model: {collection: 'Repos', params: params}
     };
     this.app.fetch(spec, function(err, result) {
-      callback(err, 'repos_index_view', result);
+      console.log(result);
+      callback(err, 'repos_index_view', { 'foo': 'bar' });
     });
   },
 

@@ -1,0 +1,9 @@
+<h1>Weather</h1>
+{{current_observation.temp_f}}
+<ul>
+{{#each models}}
+  <li>
+    <a href="/locations/{{id}}">{{locname}}</a>
+  </li>
+{{/each}}
+</ul>

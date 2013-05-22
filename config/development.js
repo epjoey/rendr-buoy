@@ -11,8 +11,12 @@ exports.config = {
   },
 
   api: {
-    host: "api.github.com",
-    protocol: "https"
+    host: "localhost/api",
+    port: "80",
+    //host: "api.wunderground.com/api/d3e2c544440a0abb",
+    protocol: "http"
+    //host: "www.buoy-report.com/api",
+    //protocol: "http"
   },
 
   rendrApp: {

@@ -1,7 +1,9 @@
 var path = require('path');
 
 var stylesheetsDir = 'assets/stylesheets';
-var rendrDir = 'node_modules/rendr';
+var nodeModulesDir = 'node_modules';
+var rendrDir = nodeModulesDir + '/rendr';
+var momentDir = nodeModulesDir + '/moment';
 var rendrModulesDir = rendrDir + '/node_modules';
 
 module.exports = function(grunt) {
@@ -84,7 +86,8 @@ module.exports = function(grunt) {
           ],
           aliases: [
             {from: rendrDir + '/client', to: 'rendr/client'},
-            {from: rendrDir + '/shared', to: 'rendr/shared'}
+            {from: rendrDir + '/shared', to: 'rendr/shared'},
+            {from: momentDir + '/moment', to: 'moment'}
           ]
         },
         files: [{
@@ -92,7 +95,8 @@ module.exports = function(grunt) {
           src: [
             'app/**/*.js',
             rendrDir + '/client/**/*.coffee',
-            rendrDir + '/shared/**/*.coffee'
+            rendrDir + '/shared/**/*.coffee',
+            momentDir + '/moment.js'
           ]
         }]
       }
